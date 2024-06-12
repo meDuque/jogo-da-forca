@@ -9,6 +9,7 @@ const words = [
   { word: "esmeralda", clue: "Tipo de pedra preciosa" },
   { word: "navio", clue: "Embarcação no mar" },
   { word: "telefone", clue: "Dispositivo de comunicação" },
+  { word: "Amanda", clue: "Crush do Duque" },
   { word: "floresta", clue: "Área com muitas árvores" },
   { word: "quadrado", clue: "Figura geométrica de quatro lados" },
   { word: "foguete", clue: "Veículo espacial" },
@@ -19,7 +20,6 @@ const words = [
   { word: "raios", clue: "Descargas elétricas na atmosfera" },
   { word: "montanha", clue: "Elevação natural da terra" },
   { word: "vela", clue: "Objeto para iluminação" },
-  { word: "Amanda", clue: "Crush do Duque" },
 ];
 
 export default function getWord() {
