@@ -1,24 +1,20 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import "./styles.css";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+document.querySelector<HTMLDivElement>("#game")!.innerHTML = `
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
+    <header>
+      <h1>Jogo da Forca</h1>
+    </header>
+    <button class="new">Novo Jogo</button>
+    <main>
+      <article class="content-img">
+        <img src="img1.png" width="250px" alt="Jogo da forca">
+      </article>
+      <article class="content">
+        <div class="guess-word"></div>
+        <div class="clue"></div>
+        <div class="btns"></div>
+      </article>
+    </main>
   </div>
-`
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+`;
