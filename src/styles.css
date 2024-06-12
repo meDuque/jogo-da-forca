@@ -1,0 +1,109 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #6A0DAD;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 4rem;
+  filter: drop-shadow(7px 7px 7px #646cff);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 200px;
+  max-width: 400px;
+}
+
+.guess-word {
+  display: flex;
+  gap: 0.85rem;
+  font-size: 3rem;
+  flex-wrap: wrap;
+}
+
+.btns {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+button {
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.btns button {
+  width: 30px;
+  background-color: #646cff;
+  box-shadow: 7px 7px 7px #3ba128
+}
+
+.new {
+  width: 120px;
+  height: 2rem;
+  background-color: #3ba128;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 10px 7px 10px #646cff
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.clue {
+  font-size: 18px;
+}
+
+@media (max-width: 650px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
